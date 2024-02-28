@@ -3,25 +3,26 @@
 {% block main %}
 <h1>Contact Form</h1>
 <h3>Fill in this form to contact the site owners.</h3>  
+<br>
 
 <form method = "POST" action = "">
     {{ form.csrf_token }}
 
     {{ form.name.label }}
     <p>Please enter your full name.</p>
-    {{ form.name(size=20) }} <br>
+    {{ form.name(size=20) }} <br><br>
 
     {{ form.email.label }}
     <p>Please enter your e-mail address.</p>
-    {{ form.email(size=20) }} <br>
+    {{ form.email(size=20) }} <br><br>
 
     {{ form.subject.label }}
     <p>Please enter the subject for your message.</p>
-    {{ form.subject(size=20) }} <br>
+    {{ form.subject(size=20) }} <br><br>
 
     {{ form.message.label }}
     <p>Please enter the message you would like to send.</p>
-    {{ form.message(size=100) }} <br>
+    {{ form.message(size=100) }} <br><br>
 
     <input type="submit" value="Send">
 </form>
